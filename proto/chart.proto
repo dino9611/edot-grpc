@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+
+option go_package = "github.com/dino9611-grpc-expense-app/grpc-expense-proto/proto";
+import "google/protobuf/empty.proto";
+
+message chart{
+    repeated int64 data = 1;
+}
+
+service Chart{
+    rpc GetChart(google.protobuf.Empty) returns (chart){}
+}
+
