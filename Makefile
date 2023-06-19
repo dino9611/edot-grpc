@@ -17,7 +17,7 @@ start-grpc-server:
 	go run ./grpcserver/cmd/main.go 
 
 start-gateway:
- 	go run ./gateway/cmd/main.go 
+	go run ./gateway/cmd/main.go 
 
 run-grpcserver:
 	./build/grpcserver
